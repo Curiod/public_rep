@@ -28,5 +28,5 @@ with open('results_RUN.txt', 'r') as file1, open("competitors2.json", encoding="
     results = sorted(results, key=lambda x: x[3])
     for i in range(len(results)):
         results[i].insert(0, i + 1)
-
+        
 display(results, 10)
